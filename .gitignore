@@ -1,0 +1,16 @@
+dist
+build
+target
+/tests/
+/coverage/
+/cobertura.ser
+MANIFEST.MF
+*.zip
+*.bak
+*/target/*
+/.idea/
+/node_modules/**
+/npm-debug.log
+/node_modules
+/*.sublime-workspace
+/work

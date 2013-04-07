@@ -1,0 +1,38 @@
+{
+    "folders":
+    [
+        {
+            "path": "."
+        }
+    ],
+    "build_systems":
+    [
+        {
+            "cmd":
+            [
+                "node",
+                "build.js",
+                "--dev"
+            ],
+            "name": "Build All Pages (dev)",
+            "working_dir": "${project_path}"
+        },
+        {
+            "cmd":
+            [
+                "node",
+                "build.js"
+            ],
+            "name": "Build All Pages",
+            "working_dir": "${project_path}"
+        }
+    ],
+    "settings":
+    {
+        "build_switcher_systems":
+        [
+            "Build All Pages",
+            "Build All Pages (dev)"
+        ]
+    }
+}

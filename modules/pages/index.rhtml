@@ -1,0 +1,39 @@
+<c:template
+    xmlns:c="core"
+    xmlns:html="html"
+    xmlns:optimizer="optimizer"
+    xmlns:w="widgets"
+    xmlns:app="app"
+    xmlns:rb="rebootstrap"
+    params="pageOutputPath">
+
+    <optimizer:page name="index" base-path="$pageOutputPath">
+        <dependencies>
+            <module name="raptor"/>
+            <module name="raptor/widgets"/>
+            <module name="rebootstrap/buttons/Button"/>
+        </dependencies>
+    </optimizer:page>    
+
+    <html html:doctype="html">
+        <head>
+            <title>website</title>
+            <optimizer:slot name="head"/>
+            
+        </head>
+        <body>
+            <h1>website</h1>
+            <rb:button label="Hello World!" variant="success" size="large"/>
+
+            <rb:nav-list>
+                <rb:nav-item label="Nav Item 1"/>
+                <rb:nav-item label="Nav Item 2"/>
+            </rb:nav-list>
+
+            <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+            <optimizer:slot name="body"/>
+            <w:init-widgets/>
+        </body>
+    </html>
+</c:template>
+

@@ -1,0 +1,11 @@
+{
+    "use": [
+        "raptorjs"
+    ],
+    "modules.dir": "modules",
+    "components.dir": "modules",
+    "pages.dir": "modules/pages",
+    "rtld.file": "modules/app.rtld",
+    "webapp.type": "static",
+    "webapp.dir": "."
+}
