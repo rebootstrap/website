@@ -12,23 +12,34 @@
             <module name="raptor"/>
             <module name="raptor/widgets"/>
             <module name="rebootstrap/buttons/Button"/>
+            <module name="rebootstrap/nav/NavList"/>
+            <module name="rebootstrap/containers/Tabs"/>
         </dependencies>
     </optimizer:page>    
 
     <html html:doctype="html">
         <head>
-            <title>website</title>
+            <title>Rebootstrap</title>
             <optimizer:slot name="head"/>
             
         </head>
         <body>
-            <h1>website</h1>
+            <h1>Rebootstrap</h1>
             <rb:button label="Hello World!" variant="success" size="large"/>
 
             <rb:nav-list>
                 <rb:nav-item label="Nav Item 1"/>
                 <rb:nav-item label="Nav Item 2"/>
             </rb:nav-list>
+
+            <rb:tabs>
+                <rb:tab label="Tab 1">
+                    Content For Tab 1
+                </rb:tab>
+                <rb:tab label="Tab 2">
+                    Content For Tab 2
+                </rb:tab>
+            </rb:tabs>
 
             <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
             <optimizer:slot name="body"/>
